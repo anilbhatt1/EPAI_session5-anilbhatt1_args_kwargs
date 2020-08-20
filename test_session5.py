@@ -66,27 +66,27 @@ def test_any_kwargs_print():
     assert avg_time > 0, 'Average time should be > 0'        
 
 def test_pos_number_squared():
-    output, avg_time = session5.time_it(squared_power_list, 2, start=0, end=5, repetitons=100) 
+    output, avg_time = session5.time_it(squared_power_list, 2, start=0, end=5, repetitions=100) 
     assert output == [1, 2, 4, 8, 16], 'Square List incorrect'
     assert avg_time > 0, 'Average time should be > 0'
 
 def test_neg_number_squared():
-    output, avg_time = session5.time_it(squared_power_list, -2, start=0, end=5, repetitons=100) 
+    output, avg_time = session5.time_it(squared_power_list, -2, start=0, end=5, repetitions=100) 
     assert output == [1, -2, 4, -8, 16], 'Square List incorrect'
     assert avg_time > 0, 'Average time should be > 0'    
 
 def test_zero_squared():
-    output, avg_time = session5.time_it(squared_power_list, 0, start=0, end=5, repetitons=100) 
+    output, avg_time = session5.time_it(squared_power_list, 0, start=0, end=5, repetitions=100) 
     assert output == [1, 0, 0, 0, 0], 'Square List incorrect'
     assert avg_time > 0, 'Average time should be > 0'  
 
 def test_pos_decimal_squared():
-    output, avg_time = session5.time_it(squared_power_list, 1.5, start=0, end=5, repetitons=100) 
+    output, avg_time = session5.time_it(squared_power_list, 1.5, start=0, end=5, repetitions=100) 
     assert output == [1.0, 1.5, 2.25, 3.375, 5.0625], 'Square List incorrect'
     assert avg_time > 0, 'Average time should be > 0'
 
 def test_neg_decimal_squared():
-    output, avg_time = session5.time_it(squared_power_list, -1.5, start=0, end=5, repetitons=100) 
+    output, avg_time = session5.time_it(squared_power_list, -1.5, start=0, end=5, repetitions=100) 
     assert output == [1.0, -1.5, 2.25, -3.375, 5.0625], 'Square List incorrect'
     assert avg_time > 0, 'Average time should be > 0'    
              
